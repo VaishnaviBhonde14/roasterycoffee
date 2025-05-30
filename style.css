@@ -1,0 +1,739 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.top-banner {
+  background-color: #5B1312;
+  color: white;
+  text-align: center;
+  padding: 1% 5%;
+  font-size: .9rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  flex-wrap: wrap;
+
+}
+.logo_img{
+  height: 65%;
+  width: 65%;
+  margin-top:5%;
+  margin-bottom:5%;
+ 
+}
+.nav-links{
+    margin-left: 2%;
+}
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+ 
+}
+.nav-links a {
+  text-decoration: none;
+  color:#5B1312;
+  font-weight: bold;
+  font-size: 1em;
+}
+.icons_div{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-right:3%;
+ 
+}
+.icon_div a{
+  /* color:#5B1312; */
+  text-decoration: none;
+}
+.icon {
+  font-size: 17px;
+  color:#5B1312;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .icons_div{
+    margin-top: 10px;
+  }
+}
+
+/* style index  */
+
+#hero {
+  width: 100%;
+}
+#h1_text {
+  color: #130f0f;
+  text-align: center;
+  margin-top:2%;
+  margin-bottom: 3%;
+}
+.new_1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: .9%;
+  margin-left:4%;
+  margin-right:2%;
+}
+img {
+  height: 60%;
+  width: 95%;
+  object-fit: cover;
+}
+.new_1 h3 {
+  text-align: center;
+  margin-top: 8%;
+   margin-bottom: 3%;
+  font-size: .9em;
+  opacity: 0.8;
+}
+.new_1 p {
+  text-align: center;
+  margin-bottom: 9%;
+}
+.produt_button {
+  height: 4em;
+  width: 80%;
+  background-color: #5B1312;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  border: 4px solid ;
+  font-weight: bold;
+  margin-bottom: 30%;
+
+}
+#textH{
+  margin-top: 1%;
+}
+#bg_img {
+  height: 600px;
+  width: 100%;
+  background-color: #8b8b83;
+  background-image: url(images/bg_img_index.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  text-align: center;
+  padding-top: 10%;
+  margin-top: 3%;
+  color: #FFFFFF;
+  position: relative;
+}
+#h4_text {
+  font-size: 2em;
+  padding-bottom: 24px;
+}
+#bg_img p {
+  font-size: 1.12em;
+  padding: 1% 15%;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  line-height: 1.1em;
+}
+#bg_button {
+  height: 8%;
+  width: 12%;
+  background-color: rgb(243, 234, 234,0.28);
+  color: #FFFFFF;
+  position: absolute;
+  top: 69%;
+  left: 42%;
+  border: 1px solid #5B1312;
+  padding: 1% 2%;
+  font-size: .7em;
+  
+}
+#only_text {
+  color: #130f0f;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#section_text {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 5%;
+}
+.img_section {
+  height: 30%;
+  width: 30%;
+}
+.first_h {
+  padding-top: 20px;
+  font-size: 1em;
+}
+#first_p {
+  padding: 2% 2%;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-family: "Nunito", sans-serif;
+}
+#text_H {
+  text-align: center;
+}
+#container_div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 4%;
+  margin-left: 5%;
+  margin-right: 4%;
+
+}
+#container_img{
+   margin-bottom:8%;
+}
+.img_1 {
+  height: 500px;
+  width: 100%;
+  background-image: url(https://roasterycoffee.co.in/wp-content/uploads/2024/07/coffee_beans_cover_photo.jpg);
+  background-size: cover;
+  
+}
+.h1_text {
+  text-align: center;
+  padding-top: 50%;
+  color: white;
+}
+.img_2 {
+  height: 500px;
+  width: 100%;
+  background-image: url(https://roasterycoffee.co.in/wp-content/uploads/2024/07/insta_pour_cover_photo.jpg);
+  background-size: cover;
+  
+}
+.img_3 {
+  height: 500px;
+  width: 100%;;
+  background-image: url(https://roasterycoffee.co.in/wp-content/uploads/2024/07/equipment_cover_photo.jpg);
+  background-size: cover;
+  
+}
+
+
+/* style about */
+
+#hero_section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-left:3%;
+    margin-right:4%;
+    gap: 40px;
+}
+
+#hero_1 {
+    flex: 1;
+    gap: 20px;
+
+}
+.hero_box1{
+    font-size:1.8em;
+    margin-bottom:5%;
+    font-weight: 100;
+}
+.hero_box2{
+    font-size:1.2em;
+    line-height:1.5em;
+    opacity:0.8; 
+}
+#hero_2 {
+    flex: 1;
+    gap: 40px;
+}
+
+@media (max-width: 768px) {
+    #hero_section {
+        flex-direction: column;
+    }
+}
+.img_box1 {
+    height: 45%;
+    width: 100%;
+   
+}
+.img_box2{
+    height: 45%;
+    width: 100%;
+    margin-top:37%;
+
+}
+
+
+/* style contact */
+
+
+   #container_sec {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding-left: 10%;
+      padding-right:10%;
+      padding-top: 5%;
+      margin-bottom:5%;
+    }
+
+    .block {
+      position: relative;
+      height: 400px;
+      color: white;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .block_div {
+      position: absolute;
+      text-align: center;
+    }
+
+    .block_div h3 {
+      margin-bottom: 10px;
+      font-size: 2em;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .block_div button {
+      background-color: #800000e0;
+      color: white;
+      padding: 9px 18px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    
+    @media (min-width: 600px) {
+      #container_sec {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    
+    @media (min-width: 1024px) {
+      #container_sec {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+
+    /* style journal*/
+
+
+#journal_div{
+   height: 550px; 
+   background-image: url(https://roasterycoffee.co.in/wp-content/uploads/2025/04/DSC05316-scaled.jpg);
+   background-repeat: no-repeat; 
+   background-size: cover; 
+   background-position: center center;
+   background-attachment: scroll; 
+   margin-left:2%;
+   margin-right: 1%;
+   margin-top:6%;
+   position:relative;
+}
+#journal_inter{
+  height: 6%;
+  width:100%;
+  color: rgb(248, 242, 242);
+  background-color:rgba(57,54,54,0.43);
+  font-size:1.2em;
+  position: absolute;
+  top:40%;
+}
+.h2_journal{
+    margin-left:40%;
+}
+#button_div{
+  position: absolute;
+  top:50%;
+  left:40%;
+  color:#FFFFFF;
+  background-color:#5B1312;
+  padding: 1em 3em;
+  border: #5B1312;
+}
+#button_div a{
+  text-decoration:none;
+  color:#FFFFFF;
+}
+#main_div{
+  height: 700px;
+  width:  1200px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9%; 
+  margin-top:4.5%;
+  margin-left:6%;
+}
+.div_img1{
+  height: 100%;
+  width:  100%;
+  flex:1;
+  background-image: url(https://roasterycoffee.co.in/wp-content/uploads/2025/02/DSC06444-scaled.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center center; 
+  background-attachment: scroll;
+  object-fit: cover;
+  position: relative;
+
+
+  
+}
+.div_img2{
+  height: 100%;
+  width:  100%;
+  flex : 1;
+  background-image: url(images/journal_img2.webp);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center center; 
+  background-attachment: scroll;
+  object-fit: cover;
+  position:relative;
+}
+@media(max-width:768px){
+    #main_div{
+      height: 900px;
+      width: 320px;
+      margin-left: 5%;
+      flex-direction:column;
+      align-items:flex-start;
+    } 
+  
+} 
+#main_jounral{
+   height: 6%;
+  width:100%;
+  color: rgb(248, 242, 242);
+  background-color:rgba(57,54,54,0.43);
+  font-size:1.2em;
+  position: absolute;
+  top:40%;
+}
+.h2_main{
+  margin-left: 32%;
+}
+#button_main{
+  position: absolute;
+  top:50%;
+  left:36%;
+  color:#FFFFFF;
+  background-color:#5B1312;
+  padding: 1em 3em;
+  border: #5B1312;
+}
+#button_main a{
+  text-decoration:none;
+  color:#FFFFFF;
+}
+
+#bottom_div1{
+   height: 550px;
+   width:  1250px;
+   display: flex;
+   margin-top:5%;
+   margin-left: 5%;
+   gap:4%;
+}
+.img_bottom1{
+  height: 100%;
+  width:  100%;
+  flex:1;
+  background-image: url(images/img_bottom1.webp);
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+ 
+  position: relative;
+}
+.img_bottom2{
+  height: 100%;
+  width:100%;
+  flex:1;
+  background-image: url(images/img_bottom2.webp);
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+  position:relative;
+}
+.img_bottom3{
+  height: 100%;
+  width:100%;
+  flex:1;
+  background-image: url(images/img_bottom3.webp);
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+  position:relative;
+}
+@media (max-width:768px){
+    #bottom_div1{
+      height: 1500px;
+      width: 300px;
+      flex-direction:column;
+      align-items:start;
+      margin-left:5%;
+    }
+}
+#bottom_jounral{
+  height: 6%;
+  width: 100%;
+  color:#FFFFFF;
+  background-color:rgba(57,54,54,0.43);
+  position: absolute;
+  top:41%;
+  font-size:1.2em;
+}
+.h2_bottom{
+  margin-left: 28%;
+}
+
+#button_b a{
+  text-decoration:none;
+  color:#FFFFFF;
+}
+
+#bottom_div2{
+   height: 550px;
+   width:  1250px;
+   display: flex;
+   margin-top:5%;
+   margin-left: 5%;
+   gap:4%;
+   position: relative;
+   margin-bottom: 5%;
+}
+.img_bottom2_1{
+  height: 100%;
+  width: 100%;
+  flex:1;
+  background-image: url(images/img_bottom2_3.webp);
+   background-repeat:no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+  position:relative;
+}
+.img_bottom2_2{
+  height: 100%;
+  width: 100%;
+  flex:1;
+  background-image: url(images/img_bottom2_2.webp);
+   background-repeat:no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+  position:relative;
+
+}
+.img_bottom2_3{
+  height: 100%;
+  width: 100%;
+  flex:1;
+  background-image: url(images/img_bottom2_1.webp);
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+  position:relative;
+
+}
+@media (max-width:768px){
+    #bottom_div2{
+      height: 1500px;
+      width: 300px;
+      flex-direction:column;
+      align-items: start;
+      margin-left:5%;
+    }
+}
+
+#button_b2{
+  position: absolute;
+  top:50%;
+  color:#FFFFFF;
+  background-color:#5B1312;
+  padding: 1em 3em;
+  border: #5B1312;
+  margin-left:10%;
+}
+#button_b2 a{
+  text-decoration:none;
+  color:#FFFFFF;
+}
+
+#login{
+  margin-left:9%;
+  margin-bottom:4%;
+}
+#login h2{
+
+  font-size: 2em;
+  padding-bottom: 10px;
+  font-weight:lighter;
+
+}
+#login p{
+    color:black;
+}
+
+/* Grew Guide */
+#grew_main{
+  margin-bottom:5%;
+}
+.grew_p{
+  text-align:center;
+  color:#5b5b5b;
+  font-size: 1em;
+  padding: 2% 8%;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  line-height: 1.4em;
+}
+#div_grew1{
+  height: 600px;
+  width: 1200px;
+  display: flex;
+  margin-left:5%;
+  gap:5%;
+  margin-top:4%;
+}
+.grew_img1{
+  height: 100%;
+  width:100%;
+  flex:1;
+  background-image: url(images/grew_img1.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  object-fit: cover;
+}
+.grew_img2{
+  height: 100%;
+  width:100%;
+  flex:1;
+  background-image: url(images/grew_img2.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  object-fit: cover;
+}
+
+.grew_img3{
+  height: 100%;
+  width:100%;
+  flex:1;
+  background-image: url(images/grew_img3.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  object-fit: cover;
+}
+.grew_img4{
+  height: 100%;
+  width:100%;
+  flex:1;
+  background-image: url(images/grew_img4.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  object-fit: cover;
+}
+@media(max-width:768px){
+   #div_grew1{
+     height: 600px;
+     width: 330px;
+     flex-direction: column;
+     align-items: start;
+    
+   }
+}
+
+/* footer */
+#footer_div {
+  height: 100%;
+  width:100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding-left:4%;
+  padding-top: 5%;
+  padding-bottom:8%;
+  background-color: #F2F2F2;
+
+}
+#footer_div img {
+  height: 50%;
+  width: 30%;
+  margin-left: 35%;
+}
+#div_1{
+  padding-bottom:12%;
+}
+.foot_h5{
+  padding-bottom: 5%; 
+  padding-top:7%; 
+  padding-left:1%;
+  text-align: center;
+}
+.foot_p{
+  font-size:.9em;
+  line-height: 1.4em;;
+}
+.ul_div li{
+  font-size:.9em;
+}
+ul {
+  text-align: center;
+  line-height: 1.8em;
+  margin-bottom: 8%;
+}
+.ul_div a{
+  text-decoration: none;
+  color:black;
+}
+#last_div {
+  height: 40px;
+  width: 100%;
+  background-color: #5B1312;
+}
+#last_p {
+  padding-top: 10px;
+  padding-left: 35%;
+  font-size: .9em;
+  color:white;
+}
