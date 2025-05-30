@@ -117,13 +117,16 @@ img {
   height: 4em;
   width: 80%;
   background-color: #5B1312;
-  color: white;
   display: block;
   margin: 0 auto;
-  border: 4px solid ;
+  border: 4px solid #5B1312;
   font-weight: bold;
   margin-bottom: 30%;
 
+}
+.produt_button a{
+  text-decoration: none;
+  color:white;
 }
 #textH{
   margin-top: 1%;
@@ -153,18 +156,18 @@ img {
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
   line-height: 1.1em;
 }
-#bg_button {
+#bg_button a{
   height: 8%;
   width: 12%;
   background-color: rgb(243, 234, 234,0.28);
   color: #FFFFFF;
   position: absolute;
-  top: 69%;
+  top: 70%;
   left: 42%;
   border: 1px solid #5B1312;
   padding: 1% 2%;
-  font-size: .7em;
-  
+  font-size: 0.9em;
+  text-decoration:none;
 }
 #only_text {
   color: #130f0f;
@@ -260,6 +263,7 @@ img {
     font-size:1.2em;
     line-height:1.5em;
     opacity:0.8; 
+    text-align:justify;
 }
 #hero_2 {
     flex: 1;
@@ -618,9 +622,10 @@ img {
   text-align:center;
   color:#5b5b5b;
   font-size: 1em;
-  padding: 2% 8%;
+  padding: 2% 7%;
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
   line-height: 1.4em;
+  /* text-align:justify; */
 }
 #div_grew1{
   height: 600px;
